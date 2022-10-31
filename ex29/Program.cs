@@ -3,11 +3,12 @@
 int numberN = new Random().Next(1, 10);
 Console.WriteLine($"Ввод числа {numberN}");
 int mult = 1;
+int digit = 1;
 
-while (numberN > 0)
+while (digit <= numberN)
 {
-    mult = mult * numberN;
-    numberN = numberN - 1;
+    mult = mult * digit;
+    digit = digit + 1;
 }
 
 Console.WriteLine($"Произведение чисел от 1 до {numberN} равно {mult}");
